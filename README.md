@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-# PokeCompendium
+![logo](https://github.com/user-attachments/assets/85eb1451-87f6-48fe-a586-577274334dee)
 =======
 # Pokecompendium
 
