@@ -1,0 +1,22 @@
+.example-container {
+    height: 100vh;
+  }
+  
+  mat-sidenav {
+    width: 250px;
+    background: #f4f4f4;
+  }
+  
+  header {
+    background: #white;
+    color: white;
+    padding: 10px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
