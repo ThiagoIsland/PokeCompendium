@@ -1,16 +1,14 @@
 <mat-sidenav-container class="example-container">
-  <mat-sidenav mode="side" opened="true">
+  <!-- Sidebar -->
+  <mat-sidenav mode="side" opened="true" class="example-sidenav">
     <p>Menu Lateral</p>
-    <a href="/">Home</a>
-    <a href="/">PokeSearch</a>
-    <a href="/">Item Finder</a>
-    <a href="/">About</a>
+    <button routerLink="/home">Home</button>
+    <button routerLink="/pokesearch">POKE Search</button>
+    <button routerLink="/itemfinder">Item Finder</button>
+    <button routerLink="/about">About</button>
   </mat-sidenav>
 
-  <mat-sidenav-content>
-    <header>
-    </header>
-    <main>
-    </main>
+  <mat-sidenav-content class="example-content">
+    <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>

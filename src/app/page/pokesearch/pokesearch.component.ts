@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
+import { HeaderComponent } from '../../header/header.component';
 
 @Component({
   selector: 'app-pokesearch',
-  imports: [],
+  standalone: true,
+  imports: [HeaderComponent],
   templateUrl: './pokesearch.component.html',
   styleUrl: './pokesearch.component.css'
 })
