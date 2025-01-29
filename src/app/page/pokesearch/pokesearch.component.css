@@ -1,0 +1,113 @@
+.pokesearch-container {
+    text-align: center;
+    margin: 30px;
+    font-family: 'Pokemon', sans-serif;
+  }
+  
+  .pokesearch-container h1 {
+    color: #ffcb05;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .pokesearch-container p {
+    color: #3e721d; 
+    font-size: 1.2rem;
+  }
+  
+
+  .search-bar {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .poke-input {
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: 2px solid #3e721d;
+    border-radius: 8px;
+    outline: none;
+    background-color: #fff5c4; 
+    color: #3e721d;
+    font-family: 'Pokemon', sans-serif;
+    transition: border-color 0.3s ease;
+  }
+  
+  .poke-input:focus {
+    border-color: #ffcb05; 
+    box-shadow: 0 0 10px rgba(255, 203, 5, 0.7); 
+  }
+  
+  .poke-button {
+    background-color: #ffcb05; 
+    color: #3e721d; 
+    font-family: 'Pokemon', sans-serif;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 2px solid #3e721d;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  .poke-button:hover {
+    background-color: #3e721d; 
+    color: #ffcb05; 
+    transform: scale(1.05);
+  }
+  
+  /* Button active effect */
+  .poke-button:active {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* p *ngIf="pokemonData === null" {
+    color: #ff0000; /* Red color for error */
+    /* font-weight: bold;
+    font-size: 1.2rem;
+  } */ 
+
+.pokemon-info {
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Pokemon', sans-serif;
+    color: #3e721d; /* Dark green */
+  }
+  
+  .pokemon-sprite {
+    max-width: 300px; 
+    width: 100%; 
+    height: auto; 
+    border: 3px solid #000000; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 203, 5, 0.5); 
+    margin: 20px 0;
+  }
+  
+  .pokemon-info p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    line-height: 1.6;
+  }
+  
+  .pokemon-info ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .pokemon-info ul li {
+    font-size: 1.1rem;
+    margin: 5px 0;
+  }
+  
+  .error-message {
+    color: #ff0000; 
+    font-weight: bold;
+    font-size: 1.2rem;
+  }

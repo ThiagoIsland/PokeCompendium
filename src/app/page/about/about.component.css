@@ -1,0 +1,115 @@
+.about-container {
+    text-align: center;
+    padding: 40px 20px;
+    font-family: 'Pokemon', sans-serif;
+    background: #f4f4f4; /* Light background */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-container h1 {
+    color: #ffcb05;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  
+  .intro-text {
+    font-size: 1.2rem;
+    color: #3e721d;
+    margin-bottom: 30px;
+  }
+  
+  .info-card {
+    background: #ffffff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .info-card h2 {
+    font-size: 2rem;
+    color: #3e721d;
+    margin-bottom: 15px;
+  }
+  
+  .info-card p {
+    font-size: 1.1rem;
+    color: #333333;
+    line-height: 1.6;
+  }
+  
+  .info-card ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .info-card ul li {
+    font-size: 1.1rem;
+    margin: 5px 0;
+  }
+  
+  .poke-api-link {
+    color: #006400;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .poke-api-link:hover {
+    color: #3e721d;
+  }
+  
+  .highlight {
+    color: #ffcb05;
+  }
+  
+  .contact-link {
+    font-size: 1.1rem;
+    color: #006400;
+    text-decoration: none;
+  }
+  
+  .contact-link:hover {
+    color: #3e721d;
+    text-decoration: underline;
+  }
+
+  .social-links {
+    margin-top: 20px;
+  }
+  
+  .social-link {
+    font-size: 1.2rem;
+    margin: 10px 15px;
+    color: #006400;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .social-link:hover {
+    color: #3e721d;
+  }
+  
+  .linkedin {
+    background-color: #0077b5; /* LinkedIn blue */
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  .github {
+    background-color: #333; /* GitHub black */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  .social-link:hover.linkedin {
+    background-color: #005c8d;
+  }
+  
+  .social-link:hover.github {
+    background-color: #444;
+  }

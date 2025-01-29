@@ -1,16 +1,27 @@
-
 <div class="pokesearch-container">
-    <h1>POKE Search</h1>
-    <p>Search your favorite Pokémon here.</p>
-    <input type="text" placeholder="Digite o nome do pokemon" #input>
+  <h1>POKE Search</h1>
+  <p>Search your favorite Pokémon here.</p>
+  <div class="search-bar">
+    <input 
+      type="text" 
+      placeholder="Type the Pokémon name" 
+      #input 
+      (keyup.enter)="searchPokemon(input.value)" 
+      class="poke-input">
+    <button class="poke-button" (click)="searchPokemon(input.value)">Search</button>
+  </div>
 </div>
 
-<div>
-<p>Sprite<img></p>
-<p>Name:</p>
-<p>Abilities:</p>
-<p>Type:</p>
-<p>Stats:</p>
-<p>Description:</p>
-
+<div *ngIf="pokemonData" class="pokemon-info">
+  <p><strong></strong> <img [src]="pokemonData.sprites.front_default" alt="Pokemon_Sprite" class="pokemon-sprite"></p>
+  <p><strong>Name:</strong> {{ pokemonData.name | titlecase }}</p>
+  <p><strong>Abilities:</strong> {{ pokemonAbilities }}</p>
+  <p><strong>Type:</strong> {{ pokemonTypes }}</p>
+  <p><strong>Stats:</strong></p>
+  <ul>
+    <li *ngFor="let stat of pokemonData.stats">
+      {{ stat.stat.name | titlecase }}: {{ stat.base_stat }}
+    </li>
+  </ul>
 </div>
+<p *ngIf="pokemonData === null" class="error-message">Pokémon not found.</p>

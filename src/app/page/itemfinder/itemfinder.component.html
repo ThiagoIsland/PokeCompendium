@@ -1,1 +1,25 @@
-<p>itemfinder works!</p>
+<div class="itemfinder-container">
+  <h1>Item Finder</h1>
+  <p>Search for an item by name:</p>
+
+  <div class="search-bar">
+    <input 
+      type="text" 
+      placeholder="Type the item name" 
+      #input 
+      (keyup.enter)="searchItem(input.value)" 
+      class="poke-input">
+    <button (click)="searchItem(input.value)" class="poke-button">Search</button>
+  </div>
+</div>
+
+<div *ngIf="itemData">
+  <div class="item-info">
+    <p><strong></strong> <img [src]="itemData.sprites.default" alt="Item Sprite" class="item-sprite"></p>
+    <p><strong>Name:</strong> {{ itemData.name | titlecase }}</p>
+    <p><strong>Effect:</strong> {{ itemData.effect_entries[0]?.effect }}</p>
+    <p><strong>Category:</strong> {{ itemData.category.name | titlecase }}</p>
+  </div>
+</div>
+
+<p *ngIf="itemData === null" class="error-message">Item not found.</p>

@@ -1,25 +1,67 @@
 .example-container {
-  height: 100vh; /* Ensures the container spans the full viewport */
-  display: flex; /* Flexbox layout ensures proper alignment */
+  height: 100vh;
+  display: flex; 
 }
 
 mat-sidenav {
-  width: 250px; /* Fixed width for the sidebar */
+  width: 250px; 
   background: #f4f4f4;
+  display: flex;  
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center; 
 }
+
 
 mat-sidenav-content {
-  flex: 1; /* Takes up the remaining space on the right */
-  padding: 20px; /* Adds spacing around the content */
-  background: #ffffff; /* Optional background */
+  flex: 1; 
+  padding: 20px; 
+  background: #ffffff; 
 }
 
-button {
-  text-decoration: none;
-  color: #333;
-  margin: 10px 0;
+.poke-button {
   display: flex;
-  align-items: center;
-  gap: 10px;
+  justify-content: center; 
+  align-items: center;  
+  background-color: #ffcb05; 
+  color: #3e721d;
+  font-family: 'Pokemon', sans-serif;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: 2px solid #3e721d; 
+  border-radius: 8px;
   cursor: pointer;
+  transition: all 0.3s ease; 
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 10px 0px 0px 15px; 
+  width: 100%;  
+  max-width: 220px; 
+  text-align: center;
+}
+
+.poke-button:hover {
+  background-color: #3e721d; 
+  color: #ffcb05;
+  transform: scale(1.05); 
+}
+
+.poke-button:active {
+  transform: scale(1.1); 
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.poke-button.router-link-active {
+  background-color: #006400; 
+  color: #ffcb05; 
+  border-color: #ffcb05;
+}
+
+.poke-button.router-link-active:hover {
+  background-color: #004d00;
+  color: #ffcb05;
+}
+
+.poke-button.router-link-active:active {
+  background-color: #003300; 
 }
