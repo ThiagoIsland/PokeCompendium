@@ -2,61 +2,64 @@
 =======
 # Pokecompendium
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.4.
+Poke Compendium is a project designed to gather all the essential information that a Pokémon Trainer needs. With an intuitive interface and comprehensive features, the project provides easy access to data on Pokémon, moves, abilities, and much more.
 
-## Development server
+This project was built using Angular 19 and consumes PokeAPI v2, ensuring efficient and real-time integration with the extensive Pokémon database.
 
-To start a local development server, run:
+![alt text](image.png)
 
-```bash
-ng serve
-```
+---
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+# Features
 
-## Code scaffolding
+- Pokémon Information: Access detailed information about various Pokémon species.
+- Moves & Abilities: View the moves and abilities available for each Pokémon.
+- Search Functionality: Quickly search for specific Pokémon, moves, or abilities.
+- Real-Time Data: Integration with PokeAPI v2 ensures the data is always up to date.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+---
 
-```bash
-ng generate component component-name
-```
+## Technologies Used
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+- **Angular 19**: For building the front-end interface, ensuring a responsive and dynamic user experience.
+- **PokeAPI v2**: For retrieving comprehensive Pokémon data, including stats, moves, abilities, and more.
+- **TypeScript**: For adding static typing to the JavaScript codebase, making the development process more robust and maintainable.
+- **HTML & CSS**: For structuring and styling the project, ensuring it looks great across devices.
+- **Git**: For version control and collaboration.
 
-```bash
-ng generate --help
-```
+---
 
-## Building
+## Things I Still Plan to Implement
 
-To build the project run:
+- **User Authentication**: Allow trainers to save their favorite Pokémon or moves.
+- **Advanced Search**: Improve search functionality with filters based on various Pokémon attributes (e.g., type, region).
+- **Dark Mode**: Add an optional dark mode theme for better user experience.
+- **Pokémon Team Management**: Allow users to create and manage their own Pokémon teams.
+- **Games INFO**: Information about all main line Pokemon Games. 
+- **Maps From REGIONS**: A Page that show all Regions and Continents in Pokemon Franchise.
 
-```bash
-ng build
-```
+---
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## Installation & Setup
 
-## Running unit tests
+To run the project locally, follow these steps:
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/PokeCompendium.git
+ 
+2.	Install dependencies:
+    ```bash
+    cd PokeCompendium
+    npm install
 
-```bash
-ng test
-```
+3.	Start the development server:
+    ```bash
+    ng serve
 
-## Running end-to-end tests
+4.	Open your browser and navigate to http://localhost:4200.
 
-For end-to-end (e2e) testing, run:
+---
+## Legal Notice
 
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
->>>>>>> master
+Pokémon is a trademark of The Pokémon Company and Nintendo. This project is not affiliated with or endorsed by either of these companies. All Pokémon names, images, and trademarks are owned by their respective creators.
