@@ -6,7 +6,7 @@ import { HeaderComponent } from '../../header/header.component';
 @Component({
   selector: 'app-itemfinder',
   standalone: true,
-  imports: [HeaderComponent, CommonModule], // Importa CommonModule para diretivas como *ngIf e *ngFor
+  imports: [HeaderComponent, CommonModule],
   templateUrl: './itemfinder.component.html',
   styleUrls: ['./itemfinder.component.css']
 })
@@ -24,7 +24,7 @@ export class ItemfinderComponent {
         this.itemData = data;
       },
       (error) => {
-        this.itemData = null; // Exibe "Item não encontrado" caso ocorra erro
+        this.itemData = null; 
       }
     );
   }

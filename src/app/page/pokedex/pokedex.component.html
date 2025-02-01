@@ -1,0 +1,21 @@
+<div class="pokedex-container">
+    <h1>Pokédex</h1>
+    <p>Select a region to display Pokémon from that region.</p>
+  
+    <div class="region-buttons">
+      <button 
+        *ngFor="let region of regions"
+        class="poke-button"
+        [class.active]="selectedRegion === region"
+        (click)="fetchPokemonByRegion(region)">
+        {{ region }}
+      </button>
+    </div>
+  
+    <div class="pokemon-grid">
+      <div *ngFor="let pokemon of pokemonList" class="pokemon-card">
+        <img [src]="pokemon.sprite" [alt]="pokemon.name">
+        <p>{{ pokemon.name | titlecase }}</p>
+      </div>
+    </div>
+  </div>
