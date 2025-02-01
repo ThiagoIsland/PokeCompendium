@@ -1,1 +1,20 @@
-<p>gameregion works!</p>
+<div class="games-container">
+    <h1>Pokémon Games & Regions</h1>
+    <p>Explore the different Pokémon games and their respective regions.</p>
+  
+    <div class="game-list">
+      <button 
+        *ngFor="let game of games" 
+        (click)="selectGame(game)" 
+        class="game-button">
+        {{ game.name }} ({{ game.region }})
+      </button>
+    </div>
+  
+    <div *ngIf="selectedGame" class="game-info">
+      <h2>{{ selectedGame.name }}</h2>
+      <p><strong>Region:</strong> {{ selectedGame.region }}</p>
+      <p><strong>Generation:</strong> {{ selectedGame.generation }}</p>
+      <img [src]="selectedGame.mapImage" alt="{{ selectedGame.region }} Map" class="region-map">
+    </div>
+  </div>

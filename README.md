@@ -6,8 +6,7 @@ Poke Compendium is a project designed to gather all the essential information th
 
 This project was built using Angular 19 and consumes PokeAPI v2, ensuring efficient and real-time integration with the extensive Pokémon database.
 
-![alt text](image.png)
-
+![alt text](<Captura de Tela 2025-01-31 às 22.21.05.png>)
 ---
 
 # Features
