@@ -1,1 +1,11 @@
-<p>regions works!</p>
+<div class="regions-container">
+    <h1>Pokémon Regions</h1>
+    <p>Explore the different Pokémon regions, their landmarks, and the Pokémon that inhabit them.</p>
+  
+    <div class="regions-grid">
+      <div class="region-card" *ngFor="let region of regions">
+        <h2>{{ region.name }}</h2>
+        <p>{{ region.description }}</p>
+      </div>
+    </div>
+  </div>

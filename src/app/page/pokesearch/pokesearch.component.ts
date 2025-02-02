@@ -19,13 +19,12 @@ export class PokesearchComponent {
   constructor(private http: HttpClient) {}
 
   searchPokemon(pokemonName: string) {
-    if (!pokemonName.trim()) return; // Evita buscas vazias
+    if (!pokemonName.trim()) return;
 
     this.http.get(`${this.apiUrl}${pokemonName.toLowerCase()}`).subscribe(
       (data: any) => {
         this.pokemonData = data;
 
-        // Processa habilidades e tipos
         this.pokemonAbilities = data.abilities
           .map((a: any) => a.ability.name)
           .join(', ');
@@ -35,7 +34,7 @@ export class PokesearchComponent {
           .join(', ');
       },
       (error) => {
-        this.pokemonData = null; // Caso não encontre o Pokémon
+        this.pokemonData = null;
         this.pokemonAbilities = '';
         this.pokemonTypes = '';
       }
