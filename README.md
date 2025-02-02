@@ -6,7 +6,7 @@ Poke Compendium is a project designed to gather all the essential information th
 
 This project was built using Angular 19 and consumes PokeAPI v2, ensuring efficient and real-time integration with the extensive Pokémon database.
 
-![alt text](image2.png)
+![alt text](image3.png)
 
 ---
 
@@ -31,13 +31,10 @@ This project was built using Angular 19 and consumes PokeAPI v2, ensuring effici
 
 ## Things I Still Plan to Implement
 
-- **User Authentication**: Allow trainers to save their favorite Pokémon or moves.
-- **Advanced Search**: Improve search functionality with filters based on various Pokémon attributes (e.g., type, region).
 - **Dark Mode**: Add an optional dark mode theme for better user experience.
 - ~**Pokedex**: Allow users to see Pokemon filtered by region.~
 - **Pokémon Team Management**: Allow users to create and manage their own Pokémon teams.
-- **Games INFO**: Information about all main line Pokemon Games. 
-- **Maps From REGIONS**: A Page that show all Regions and Continents in Pokemon Franchise.
+- ~**Regions INFO**: Information about all main line Pokemon Games.~
 
 ---
 
