@@ -2,7 +2,7 @@
 =======
 # Pokecompendium
 
-Poke Compendium is a project designed to gather all the essential information that a Pokémon Trainer needs. With an intuitive interface and comprehensive features, the project provides easy access to data on Pokémon, moves, abilities, and much more.
+Poke Compendium is a project designed to gather all the essential information that a Pokémon Trainer needs. With an intuitive interface and comprehensive features, the project provides easy access to data on Pokémon, abilities, and much more.
 
 This project was built using Angular 19 and consumes PokeAPI v2, ensuring efficient and real-time integration with the extensive Pokémon database.
 
@@ -13,7 +13,6 @@ This project was built using Angular 19 and consumes PokeAPI v2, ensuring effici
 # Features
 
 - Pokémon Information: Access detailed information about various Pokémon species.
-- Moves & Abilities: View the moves and abilities available for each Pokémon.
 - Search Functionality: Quickly search for specific Pokémon, moves, or abilities.
 - Real-Time Data: Integration with PokeAPI v2 ensures the data is always up to date.
 
