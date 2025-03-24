@@ -9,6 +9,7 @@ export const appConfig = {
   providers: [
     provideRouter(routes),
     importProvidersFrom(HttpClientModule) 
+    ]
 };
 
 bootstrapApplication(AppComponent, appConfig)
